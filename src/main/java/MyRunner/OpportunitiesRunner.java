@@ -10,7 +10,7 @@ import cucumber.api.junit.Cucumber;
 
 		glue = { "stepDefinitions" }, plugin = { "pretty", "html:test-outout", "json:json_output/cucumber.json",
 				"junit:junit_xml/cucumber.xml" }, monochrome = true, strict = true, dryRun = false
-//      tags = {"~@SmokeTest" , "~@RegressionTest", "~@End2End"}
+
 
 )
 
