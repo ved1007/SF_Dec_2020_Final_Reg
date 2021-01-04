@@ -138,7 +138,6 @@ public class OpportunitiesStepDef {
 		String title = op.getTitle();
 		System.out.println(title);
 		Assert.assertEquals(saleforceTitle, title);
-		
 
 	}
 
@@ -152,7 +151,6 @@ public class OpportunitiesStepDef {
 	@Then("^Click login button$")
 	public void click_login_button() throws Throwable {
 		op.LogInToSandboxBtn();
-		
 
 	}
 
@@ -752,7 +750,7 @@ public class OpportunitiesStepDef {
 
 	@Then("^Click the Save button$")
 	public void click_the_Save_button() {
-        op.clicktheSavebutton();
+		op.clicktheSavebutton();
 
 	}
 }
