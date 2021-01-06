@@ -15,8 +15,7 @@ public class PresentToManagerStepDefi {
 
 	WebDriver driver;
 
-	Xls_Reader reader = new Xls_Reader(
-			"/Users/vedant.jagani/git/Salesforce/CucumberBDDFrame/SampleData/ExcelTestData.xlsx");
+	Xls_Reader reader = new Xls_Reader("/Users/vedant.jagani/git/Salesforce/CucumberBDDFrame/SampleData/ExcelTestData.xlsx");
 
 	String Receptionist = reader.getCellData("PresentToManager", "Receptionist", 2);
 	String CustomerDescription = reader.getCellData("PresentToManager", "CustomerDescription", 2);

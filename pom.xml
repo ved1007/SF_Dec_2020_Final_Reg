@@ -8,15 +8,16 @@
 	<groupId>CucumberBDDFrame</groupId>
 	<artifactId>CucumberBDDFrame</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-
+	<packaging>war</packaging>
 	<name>CucumberBDDFrame</name>
-	<!-- FIXME change it to the project's website -->
 	<url>http://www.example.com</url>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
+		<spring.version>0.0.1.RELEASE</spring.version>
+		<axis2.version>1.7.9</axis2.version>
 	</properties>
 
 	<dependencies>
@@ -33,6 +34,12 @@
 			<version>6.14.</version>
 		</dependency>
 
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>6.13</version>
+			<scope>test</scope>
+		</dependency>
 
 		<dependency>
 			<groupId>com.codoid.products</groupId>
@@ -43,7 +50,7 @@
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.13</version>
+			<version>4.12</version>
 		</dependency>
 
 		<dependency>
@@ -56,6 +63,20 @@
 			<groupId>info.cukes</groupId>
 			<artifactId>cucumber-java</artifactId>
 			<version>1.2.5</version>
+		</dependency>
+
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-testng</artifactId>
+			<version>1.2.5</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-jvm</artifactId>
+			<version>1.2.5</version>
+			<type>pom</type>
 		</dependency>
 
 		<dependency>
@@ -71,19 +92,7 @@
 			<scope>provided</scope>
 		</dependency>
 
-		<dependency>
-			<groupId>info.cukes</groupId>
-			<artifactId>cucumber-jvm</artifactId>
-			<version>1.2.5</version>
-			<type>pom</type>
-		</dependency>
 
-		<dependency>
-			<groupId>info.cukes</groupId>
-			<artifactId>cucumber-jvm-deps</artifactId>
-			<version>1.0.5</version>
-			<scope>provided</scope>
-		</dependency>
 
 		<dependency>
 			<groupId>info.cukes</groupId>
@@ -93,18 +102,10 @@
 		</dependency>
 
 		<dependency>
-			<groupId>org.testng</groupId>
-			<artifactId>testng</artifactId>
-			<version>6.13</version>
-			<scope>test</scope>
-		</dependency>
-
-		<dependency>
 			<groupId>info.cukes</groupId>
-			<artifactId>cucumber-testng</artifactId>
-			<version>1.2.5</version>
-			<scope>compile</scope>
-			
+			<artifactId>cucumber-jvm-deps</artifactId>
+			<version>1.0.5</version>
+			<scope>provided</scope>
 		</dependency>
 
 		<dependency>
@@ -119,13 +120,11 @@
 			<version>3.17</version>
 		</dependency>
 
-
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi</artifactId>
 			<version>4.1.2</version>
 		</dependency>
-
 
 		<dependency>
 			<groupId>net.masterthought</groupId>
@@ -141,7 +140,6 @@
 			<scope>test</scope>
 		</dependency>
 
-
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-picocontainer</artifactId>
@@ -151,28 +149,8 @@
 
 		<dependency>
 			<groupId>info.cukes</groupId>
-			<artifactId>cucumber-java</artifactId>
-			<version>1.2.5</version>
-		</dependency>
-
-		<dependency>
-			<groupId>info.cukes</groupId>
 			<artifactId>cucumber-junit</artifactId>
 			<version>1.2.5</version>
-		</dependency>
-
-
-		<dependency>
-			<groupId>info.cukes</groupId>
-			<artifactId>cucumber-jvm-deps</artifactId>
-			<version>1.0.5</version>
-			<scope>provided</scope>
-		</dependency>
-
-		<dependency>
-			<groupId>net.masterthought</groupId>
-			<artifactId>cucumber-reporting</artifactId>
-			<version>5.0.2</version>
 		</dependency>
 
 		<dependency>
@@ -183,16 +161,33 @@
 
 	</dependencies>
 
+	<distributionManagement>
+
+		<repository>
+			<id>nexus</id>
+			<name>releaserepo</name>
+			<url>http://localhost:8081/repository/MavenNexusTest-Release/</url>
+		</repository>
+
+		<snapshotRepository>
+			<id>nexus</id>
+			<name>snapshotrepo</name>
+			<url>http://localhost:8081/repository/GitMavenNexusTest2Snapshot-1/</url>
+
+		</snapshotRepository>
+
+	</distributionManagement>
+
 	<build>
 		<pluginManagement><!-- lock down plugins versions to avoid using Maven 
 				defaults (may be moved to parent pom) -->
 			<plugins>
-				<!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
+
 				<plugin>
 					<artifactId>maven-clean-plugin</artifactId>
 					<version>3.1.0</version>
 				</plugin>
-				<!-- default lifecycle, jar packaging: see https://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_jar_packaging -->
+
 				<plugin>
 					<artifactId>maven-resources-plugin</artifactId>
 					<version>3.0.2</version>
@@ -229,5 +224,4 @@
 			</plugins>
 		</pluginManagement>
 	</build>
-	<packaging>pom</packaging>
 </project>

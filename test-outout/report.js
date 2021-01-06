@@ -271,180 +271,92 @@ formatter.step({
   "name": "Click the Save button",
   "keyword": "Then "
 });
-formatter.match({
-  "location": "OpportunitiesStepDef.open_the_Salesforce_Website()"
-});
+formatter.match({});
 formatter.result({
-  "duration": 19975671626,
-  "status": "passed"
+  "status": "undefined"
 });
-formatter.match({
-  "arguments": [
-    {
-      "val": "Login | Salesforce",
-      "offset": 37
-    }
-  ],
-  "location": "OpportunitiesStepDef.verify_the_Salesforce_page_title_as(String)"
-});
+formatter.match({});
 formatter.result({
-  "duration": 6324757,
-  "status": "passed"
+  "status": "undefined"
 });
-formatter.match({
-  "arguments": [
-    {
-      "val": "vedant.jagani@campingworld.com.test",
-      "offset": 40
-    },
-    {
-      "val": "Welcome2019*",
-      "offset": 82
-    }
-  ],
-  "location": "OpportunitiesStepDef.login_with_valid_username_and_password_and(String,String)"
-});
+formatter.match({});
 formatter.result({
-  "duration": 62252411,
-  "status": "passed"
+  "status": "undefined"
 });
-formatter.match({
-  "location": "OpportunitiesStepDef.click_login_button()"
-});
+formatter.match({});
 formatter.result({
-  "duration": 56890473412,
-  "status": "passed"
+  "status": "undefined"
 });
-formatter.match({
-  "arguments": [
-    {
-      "val": "Home | Salesforce",
-      "offset": 38
-    }
-  ],
-  "location": "OpportunitiesStepDef.verify_Salesforce_Home_page_title_as(String)"
-});
+formatter.match({});
 formatter.result({
-  "duration": 40010146932,
-  "status": "passed"
+  "status": "undefined"
 });
-formatter.match({
-  "location": "OpportunitiesStepDef.click_on_the_Opportunities_tab()"
-});
+formatter.match({});
 formatter.result({
-  "duration": 147164825,
-  "status": "passed"
+  "status": "undefined"
 });
-formatter.match({
-  "location": "OpportunitiesStepDef.click_on_the_New_button()"
-});
+formatter.match({});
 formatter.result({
-  "duration": 982846653,
-  "status": "passed"
+  "status": "undefined"
 });
-formatter.match({
-  "location": "OpportunitiesStepDef.select_a_record_type_and_click_Next()"
-});
+formatter.match({});
 formatter.result({
-  "duration": 993216999,
-  "status": "passed"
+  "status": "undefined"
 });
-formatter.match({
-  "location": "OpportunitiesStepDef.verify_Required_fields_message()"
-});
+formatter.match({});
 formatter.result({
-  "duration": 304349306,
-  "status": "passed"
+  "status": "undefined"
 });
-formatter.match({
-  "location": "OpportunitiesStepDef.Save_button()"
-});
+formatter.match({});
 formatter.result({
-  "duration": 3997143818,
-  "status": "passed"
+  "status": "undefined"
 });
-formatter.match({
-  "location": "OpportunitiesStepDef.populate_System_Admin_Layout_fields()"
-});
+formatter.match({});
 formatter.result({
-  "duration": 974530862,
-  "status": "passed"
+  "status": "undefined"
 });
-formatter.match({
-  "location": "OpportunitiesStepDef.Opportunity_Information()"
-});
+formatter.match({});
 formatter.result({
-  "duration": 9739641847,
-  "status": "passed"
+  "status": "undefined"
 });
-formatter.match({
-  "location": "OpportunitiesStepDef.populate_Interested_In_Attributes_fields()"
-});
+formatter.match({});
 formatter.result({
-  "duration": 5217929630,
-  "status": "passed"
+  "status": "undefined"
 });
-formatter.match({
-  "location": "OpportunitiesStepDef.Interested_In_Details()"
-});
+formatter.match({});
 formatter.result({
-  "duration": 4548528779,
-  "status": "passed"
+  "status": "undefined"
 });
-formatter.match({
-  "location": "OpportunitiesStepDef.Towing_Information()"
-});
+formatter.match({});
 formatter.result({
-  "duration": 385421516,
-  "status": "passed"
+  "status": "undefined"
 });
-formatter.match({
-  "location": "OpportunitiesStepDef.currently_Own_Trade_InCurrently_Own_TradeIn_from_Web_Lead_fields()"
-});
+formatter.match({});
 formatter.result({
-  "duration": 1207962002,
-  "status": "passed"
+  "status": "undefined"
 });
-formatter.match({
-  "location": "OpportunitiesStepDef.pupulate_Info_from_lead_fields()"
-});
+formatter.match({});
 formatter.result({
-  "duration": 438808982,
-  "status": "passed"
+  "status": "undefined"
 });
-formatter.match({
-  "location": "OpportunitiesStepDef.Lead_Source()"
-});
+formatter.match({});
 formatter.result({
-  "duration": 1257346870,
-  "status": "passed"
+  "status": "undefined"
 });
-formatter.match({
-  "location": "OpportunitiesStepDef.enter_the_Description_Information()"
-});
+formatter.match({});
 formatter.result({
-  "duration": 53473490,
-  "status": "passed"
+  "status": "undefined"
 });
-formatter.match({
-  "location": "OpportunitiesStepDef.populate_Other_data_fields()"
-});
+formatter.match({});
 formatter.result({
-  "duration": 1718382411,
-  "status": "passed"
+  "status": "undefined"
 });
-formatter.match({
-  "location": "OpportunitiesStepDef.System_Information_fields()"
-});
+formatter.match({});
 formatter.result({
-  "duration": 2285862106,
-  "status": "passed"
+  "status": "undefined"
 });
-formatter.match({
-  "location": "OpportunitiesStepDef.click_the_Save_button()"
-});
+formatter.match({});
 formatter.result({
-  "duration": 252226136,
-  "status": "passed"
+  "status": "undefined"
 });
 });

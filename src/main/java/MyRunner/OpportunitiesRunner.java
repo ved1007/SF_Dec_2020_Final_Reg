@@ -9,8 +9,10 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(features = "/Users/vedant.jagani/Desktop/SF_QA_Regression_December_2020/src/main/java/Features/Opportunities.feature",
 
 		glue = { "stepDefinitions" }, plugin = { "pretty", "html:test-outout", "json:json_output/cucumber.json",
-				"junit:junit_xml/cucumber.xml" }, monochrome = true, strict = true, dryRun = false
-
+				"junit:junit_xml/cucumber.xml" },
+		monochrome = true,
+		strict = true,
+		dryRun = false
 
 )
 
